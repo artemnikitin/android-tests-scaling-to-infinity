@@ -18,6 +18,7 @@ RUN apt-get update && apt-get --no-install-recommends -y install \
     apt-transport-https \
     ca-certificates \
     default-jdk \
+    python \
     && apt-get clean && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
