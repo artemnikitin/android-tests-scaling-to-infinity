@@ -30,4 +30,5 @@ RUN mkdir -p $ANDROID_HOME && mkdir -p $ANDROID_HOME/licenses/ \
     && wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip \
     && unzip -qq android-sdk.zip -d $ANDROID_HOME \
     && rm android-sdk.zip \
-    && (echo y; echo y; echo y; echo y; echo y; echo y) | sdkmanager --licenses
+    && (echo y; echo y; echo y; echo y; echo y; echo y) | sdkmanager --licenses \
+    && sdkmanager "platform-tools"
